@@ -5962,8 +5962,6 @@ function! fugitive#MapJumps(...) abort
       call s:MapMotion(')', 'exe <SID>NextItem(v:count1)')
       call s:MapMotion('K', 'exe <SID>PreviousHunk(v:count1)')
       call s:MapMotion('J', 'exe <SID>NextHunk(v:count1)')
-      call s:MapMotion('[c', 'exe <SID>PreviousHunk(v:count1)')
-      call s:MapMotion(']c', 'exe <SID>NextHunk(v:count1)')
       call s:MapMotion('[/', 'exe <SID>PreviousFile(v:count1)')
       call s:MapMotion(']/', 'exe <SID>NextFile(v:count1)')
       call s:MapMotion('[m', 'exe <SID>PreviousFile(v:count1)')
